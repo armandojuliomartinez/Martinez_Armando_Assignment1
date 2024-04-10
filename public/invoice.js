@@ -73,3 +73,5 @@ function display_invoice() {
   let total = subtotal + tax + shipping;
   document.getElementById('total_span').innerText = total.toFixed(2);
 }
+
+// IR4 If the purchase is invalid (see three conditions given in the instructions above), change the purchase button text from “Purchase” to text that indicates why the purchase is invalid e.g. “Please Select Some Items to Purchase”. Do not disable the button or add a guard that prevents the user form purchasing.

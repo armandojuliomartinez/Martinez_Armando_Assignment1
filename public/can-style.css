@@ -19,7 +19,7 @@ body {
   font-size:5rem;
   }
 
-  h2 {
+  h2,h3 {
   font-size:2rem;
   color:#FF0;
   text-align:right;
@@ -121,7 +121,8 @@ body {
   }
 
   section img {
-  width:100%;
+  width: 50%;
+  height: auto;
   display:block;
   position:absolute;
   bottom:0;

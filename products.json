@@ -1,74 +1,74 @@
 [
   {
-    "name" : "baked beans",
-    "price" : 0.40,
-    "image" : "beans.jpg",
-    "type" : "vegetables"
+    "name": "LEGO: AT-At",
+    "price": 849.99,
+    "image": "LEGO_AT_AT.jpg",
+    "quantity_available": 3
   },
   {
-    "name" : "hot dogs",
-    "price" : 1.99,
-    "image" : "hotdogs.jpg",
-    "type" : "meat"
+    "name": "LEGO: Millennium Falcon",
+    "price": 849.99,
+    "image": "LEGO_Millenium_Falcon.jpg",
+    "quantity_available": 8
   },
   {
-    "name" : "spam",
-    "price" : 2.85,
-    "image" : "spam.jpg",
-    "type" : "meat"
+    "name": "Lego: The Razor Crest",
+    "price": 599.99,
+    "image": "LEGO_Razor_Crest.jpg",
+    "quantity_available": 1
   },
   {
-    "name" : "refried beans",
-    "price" : 0.99,
-    "image" : "refried.jpg",
-    "type" : "vegetables"
+    "name": "LEGO: Venator-Class Republic Attack Cruisers",
+    "price": 649.99,
+    "image": "LEGO_Venator_Class_Republic_Attack_Cruiser.jpg",
+    "quantity_available": 12
   },
   {
-    "name" : "kidney beans",
-    "price" : 0.58,
-    "image" : "kidney.jpg",
-    "type" : "vegetables"
+    "name": "LEGO: Executor Super Star Destroyer",
+    "price": 69.99,
+    "image": "LEGO_Executor_Super_Star_Destroyer.jpg",
+    "quantity_available": 6
   },
   {
-    "name" : "garden peas",
-    "price" : 0.52,
-    "image" : "gardenpeas.jpg",
-    "type" : "vegetables"
+    "name": "Invisible Hand",
+    "price": 49.99,
+    "image": "LEGO_Invisible_Hand.jpg",
+    "quantity_available": 42
   },
   {
-    "name" : "mushy peas",
-    "price" : 0.58,
-    "image" : "mushypeas.jpg",
-    "type" : "vegetables"
+    "name": "Tantive IV",
+    "price": 79.99,
+    "image": "LEGO_Tantive_IV.jpg",
+    "quantity_available": 45
   },
   {
-    "name" : "corned beef",
-    "price" : 2.39,
-    "image" : "cornedbeef.jpg",
-    "type" : "meat"
+    "name": "Tusken Raider",
+    "price": 9.99,
+    "image": "LEGO_tusken_raider.jpg",
+    "quantity_available": 13
   },
   {
-    "name" : "tomato soup",
-    "price" : 1.40,
-    "image" : "tomatosoup.jpg",
-    "type" : "soup"
+    "name": "LEGO: 501st Clone Troopers™ Battle Pack",
+    "price": 19.99,
+    "image": "LEGO_501st_Clone_Troopers_Battle_Pack.jpg",
+    "quantity_available": 66
   },
   {
-    "name" : "chopped tomatoes",
-    "price" : 0.45,
-    "image" : "tomato.jpg",
-    "type" : "vegetables"
+    "name": "LEGO: Rupublic Gunship",
+    "price": 399.99,
+    "image": "LEGO_Republic_Gunship.jpg",
+    "quantity_available": 4
   },
   {
-    "name" : "chicken noodle soup",
-    "price" : 1.89,
-    "image" : "chickennoodle.jpg",
-    "type" : "soup"
+    "name": "LEGO: BD-1",
+    "price": 99.99,
+    "image": "LEGO_BD_1.jpg",
+    "quantity_available": 7
   },
   {
-    "name" : "carrot and coriander soup",
-    "price" : 1.49,
-    "image" : "carrotcoriander.jpg",
-    "type" : "soup"
+    "name": "LEGO: The Child",
+    "price": 89.99,
+    "image": "LEGO_Grogu.jpg",
+    "quantity_available": 10
   }
 ]

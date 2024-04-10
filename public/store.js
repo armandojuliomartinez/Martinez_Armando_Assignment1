@@ -1,4 +1,4 @@
-// get the query string into a easy to use object
+// get the query string into an easy-to-use object
 const params = (new URL(document.location)).searchParams;
 let errors = {};
 let quantities = [];
@@ -6,18 +6,25 @@ let quantities = [];
 // check if the query string has errors, if so parse it
 if (params.has('errors')) {
   errors = JSON.parse(params.get('errors'));
-  // get the quantities also to insert into the form to make sticky
+  // get the quantities also to insert into the form to make it sticky
   quantities = JSON.parse(params.get('quantities'));
-  // Put up an alert box if there are errors
-  alert('Please fix the errors in the form and resubmit');
+  // modify code here to put up an alert if you have an error in errors indicating no quantities were selected
+  if (quantities.every(qty => parseInt(qty) == 0)) {
+    alert('Please select at least 1 quantity for an item before submitting.');
+    document.getElementById('PurchaseButton').value = 'Please select 1 item';
+  } else {
+    // Put up an alert box if there are errors
+    alert('Please fix the errors in the form and resubmit');
+  }
 }
 
 let products;
+
 window.onload = async function () {
   // use fetch to retrieve product data from the server
   // once the products have been successfully loaded and formatted as a JSON object
   // display the products on the page
-  await fetch('products.json').then(await function (response) {
+  await fetch('products.json').then(async function (response) {
     if (response.ok) {
       response.json().then(function (json) {
         products = json;
@@ -46,26 +53,28 @@ function myFunction() {
   }
 }
 
-
 function display_products() {
-  for (i = 0; i < products.length; i++) {
+  // loop through the products array and display each product as a section element
+  for (let i = 0; i < products.length; i++) {
     let quantity_label = 'Quantity';
-    if( (typeof errors['quantity'+i]) != 'undefined' ) {
-      quantity_label = `<font class="error_message">${errors['quantity'+i].join('<br>')}</font>`;
+    // if there is an error with this quantity, put it in the label to display it
+    if ((typeof errors['quantity' + i]) != 'undefined') {
+      quantity_label = `<font class="error_message">${errors['quantity' + i]}</font>`;
     }
     let quantity = 0;
     // put previous quantity in textbox if it exists
-    if((typeof quantities[i]) != 'undefined') {
+    if ((typeof quantities[i]) != 'undefined') {
       quantity = quantities[i];
     }
     products_main_display.innerHTML += `
-<section class="item">
-                <h2>${products[i].name}</h2>
-                <p>$${products[i].price}</p>
-                <label>${quantity_label}</label>
-                <input type="text" placeholder="0" name="quantity_textbox[${i}]" value="${quantity}">
-                <img src="./images/${products[i].image}">
-            </section>
+    <div class="w3-quarter w3-center w3-padding">
+    <img src="./images/${products[i].image}" style="width:100%; height: 300px;">
+    <h2>${products[i].name}</h2>
+    <h3>${products[i].quantity_available} available</h3>
+    <h3>$${products[i].price}</h3>
+    <label>${quantity_label}</label>
+    <input type="text" placeholder="0" name="quantity_textbox[${i}]" value="${quantity}">
+    </div> 
 `;
   }
 }
