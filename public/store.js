@@ -11,14 +11,11 @@ if (params.has('errors')) {
   // modify code here to put up an alert if you have an error in errors indicating no quantities were selected
   if (quantities.every(qty => parseInt(qty) == 0)) {
     alert('Please select at least 1 quantity for an item before submitting.');
-    document.getElementById('PurchaseButton').value = 'Please select 1 item';
   } else {
     // Put up an alert box if there are errors
     alert('Please fix the errors in the form and resubmit');
   }
 }
-
-let products;
 
 window.onload = async function () {
   // use fetch to retrieve product data from the server
@@ -29,11 +26,23 @@ window.onload = async function () {
       response.json().then(function (json) {
         products = json;
         display_products();
+        updatePurchaseButton();
       });
     } else {
       console.log('Network request for products.json failed with response ' + response.status + ': ' + response.statusText);
     }
   });
+}
+
+function updatePurchaseButton() {
+  const purchaseButton = document.getElementById("PurchaseButton");
+  if (quantities.length>0 && quantities.every(qty => parseInt(qty) == 0)) {
+    purchaseButton.value = "Please Select Some Items to Purchase";
+  } else if (Object.keys(errors).length > 0) {
+    purchaseButton.value = "Please fix the errors and try again";
+  } else {
+    purchaseButton.value = "Purchase!";
+  }
 }
 
 // function to perform the filtering of the products
