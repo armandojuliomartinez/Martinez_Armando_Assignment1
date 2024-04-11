@@ -1,0 +1,59 @@
+Test1
+Scenario: User selects 0 quantities for all items
+Expected Result: User is informed that they must select at least one item to purchase  
+Actual Result: User is informed that they must select at least one item to purchase through both an alert and purchase button
+Tested by: Entering 0 in all quantity text boxes and clicking the purchase button
+
+Test2
+Scenario:user clicks button to enter store
+Expected Result: customer gets redirected to the store.html
+Actual Result: customer got redirected to the store.html
+Tested by: clikcing on button to enter store
+
+Test3
+Scenario: User enters a negative number
+Expected Result: get an alert informing customer that they need to fix there quantities 
+Actual Result: got an alert saying please fix the errors in the form and resubmit, where error occurred it tells user what is wrong,purchase button' value is Please Fix the errors and try again
+Tested by: entering a negative value in an input text box for an item
+
+Test4
+Scenario: User fix negative error to a positive integer
+Expected Result: user is taken to invoice and it displays the correct products
+Actual Result: displayed the correct products and takes them to the invoice.html
+Tested by: putting in positive quantities in 4 different products
+
+Test5
+Scenario: User enters some amount to purchase
+expected Result: the number of quantity available should have gone down by the number purchased
+Actual Result: Number of quantity available went down by the amount purchased
+Tested by: entering 6 of the LEGO: Executor Super Star Destroyer; 1 LEGO: The Razor Crest; 2 LEGO: Millennium Falcon; 1 LEGO: AT-AT
+
+Test6
+Scenario: User enters not a number
+Expected Result: recieve an error msg to fix error and try again, where error occurrs it tells user what is wrong
+Actual Result: got alert telling me to fix error and try again, where error occurred it tells user what is wrong, purchase button value says please fix the errors and try again
+Tested by: entering cat in the input text box for LEGO AT-AT
+
+Test7 
+Scenario: user enters a positive non integer and then clicks submit button
+Expected Result: recieve an alert error msg to fix error and try again, where error occurrs it tells user what is wrong
+Actual Result: ot alert telling me to fix error and try again, where error occurred it tells user what is wrong, purchase button value says please fix the errors and try again
+Tested by: entering 1.2 in the input text box for LEGO: AT-AT
+
+Test8
+Scenario: user enters more than is available
+Expected Result: prevents user from going to invoice
+Actual Result: Given alert to fix ther errrors in the form and resubmit, told not enough available in inventory where user tried to enter more than is available
+Tested by: putting in a number larger than quantitiy available.
+
+Test9
+Scenario: user entered more than one product
+Expected Result: calculates correct subtotal and total
+Actual Result:calculated subtotatl and total correctly
+Tested by: entering 5 LEGO: Invisible Hand; 3 LEGO: Venator-Class Republic Attack Cruisers; 1 LEGO: Millennium Falcon; and 2 LEGO: AT-AT
+
+Test10
+Scenario: user has a subtotal of 49.99 
+Expected Result: Should have a shipping charge of $2
+Actual Result:shipping charge is $2
+Tested by: entering a LEGO: Invisible Hand that costed 49.99

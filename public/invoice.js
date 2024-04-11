@@ -29,20 +29,21 @@ window.onload = function () {
 function display_invoice() {
   let extended_price;
   let subtotal = 0;
-
-  // Identify the table element
   const table = document.getElementById('invoice_table');
 
-// loop through quantities array and output invoice table row
   for (let i in quantities) {
     if (quantities[i] == 0) continue; // don't output zero quantity items
     extended_price = quantities[i] * products[i].price;
-    subtotal += extended_price; // running subtotal
-    // Create a new row element
+    subtotal += extended_price;
+    
     let new_row = table.insertRow(1); // Inserts after the first row (index 1)
-    // generate what to output in table row
+
+    // Assuming products[i].image contains the image path
     new_row.innerHTML = `
-      <td width="43%">${products[i].name}</td>
+      <td width="43%">
+        <img src="./images/${products[i].image}" style="width: 50px; height: 50px; float: left; margin-right: 10px;">
+        ${products[i].name}
+      </td>
       <td align="center" width="11%">${quantities[i]}</td>
       <td width="13%">\$${products[i].price}</td>
       <td width="54%">\$${extended_price.toFixed(2)}</td>

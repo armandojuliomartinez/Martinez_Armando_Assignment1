@@ -1,6 +1,6 @@
 [
   {
-    "name": "LEGO: AT-At",
+    "name": "LEGO: AT-AT",
     "price": 849.99,
     "image": "LEGO_AT_AT.jpg",
     "quantity_available": 3
@@ -12,7 +12,7 @@
     "quantity_available": 8
   },
   {
-    "name": "Lego: The Razor Crest",
+    "name": "LEGO: The Razor Crest",
     "price": 599.99,
     "image": "LEGO_Razor_Crest.jpg",
     "quantity_available": 1
@@ -30,19 +30,19 @@
     "quantity_available": 6
   },
   {
-    "name": "Invisible Hand",
+    "name": "LEGO: Invisible Hand",
     "price": 49.99,
     "image": "LEGO_Invisible_Hand.jpg",
     "quantity_available": 42
   },
   {
-    "name": "Tantive IV",
+    "name": "LEGO: Tantive IV",
     "price": 79.99,
     "image": "LEGO_Tantive_IV.jpg",
     "quantity_available": 45
   },
   {
-    "name": "Tusken Raider",
+    "name": "LEGO: Tusken Raider",
     "price": 9.99,
     "image": "LEGO_tusken_raider.jpg",
     "quantity_available": 13

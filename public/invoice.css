@@ -1,0 +1,37 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.invoice-header {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.company-info {
+    text-align: right;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.invoice-content {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.invoice-footer {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+}

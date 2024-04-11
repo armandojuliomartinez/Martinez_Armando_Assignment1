@@ -26,6 +26,7 @@ window.onload = async function () {
       response.json().then(function (json) {
         products = json;
         display_products();
+        //properly calls the function so it executes after all the products have loaded.
         updatePurchaseButton();
       });
     } else {
@@ -33,11 +34,15 @@ window.onload = async function () {
     }
   });
 }
-
+// IR4
+// following function fulfills IR4
 function updatePurchaseButton() {
+  //declares an easy to use variable to change the value of the Purchase button
   const purchaseButton = document.getElementById("PurchaseButton");
-  if (quantities.length>0 && quantities.every(qty => parseInt(qty) == 0)) {
+  // ensures that the length of the array is greater than 0 and makes sure when the array is present that all elements are = 0
+  if (quantities.length > 0 && quantities.every(qty => parseInt(qty) == 0)) {
     purchaseButton.value = "Please Select Some Items to Purchase";
+  //if there is an error of a nonNegInt it will display this message inside the purchase button
   } else if (Object.keys(errors).length > 0) {
     purchaseButton.value = "Please fix the errors and try again";
   } else {
@@ -47,7 +52,7 @@ function updatePurchaseButton() {
 
 // function to perform the filtering of the products
 function myFunction() {
-  var input, filter, ul, si, a, i, txtValue;
+  var input, filter, si, a, i, txtValue;
   input = document.getElementById("search_textbox");
   filter = input.value.toUpperCase();
   si = document.getElementsByTagName("section");
