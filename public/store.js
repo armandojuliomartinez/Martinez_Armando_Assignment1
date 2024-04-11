@@ -81,7 +81,7 @@ function display_products() {
       quantity = quantities[i];
     }
     products_main_display.innerHTML += `
-    <div class="w3-quarter w3-center w3-padding">
+    <div class="w3-half w3-center w3-padding">
     <img src="./images/${products[i].image}" style="width:100%; height: 300px;">
     <h2>${products[i].name}</h2>
     <h3>${products[i].quantity_available} available</h3>
