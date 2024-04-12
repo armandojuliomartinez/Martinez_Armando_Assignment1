@@ -1,37 +1,76 @@
+/* General body styles */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 20px;
-    background-color: #f4f4f4;
+    padding: 0;
+    background-color: #f9f9f9; /* Soft grey background */
+    color: #333; /* Dark grey text for readability */
 }
 
+/* Header styles */
 .invoice-header {
-    background-color: #007bff;
-    color: #ffffff;
+    background-color: #5a88ca; /* Soft blue header */
+    color: #fff; /* White text for contrast */
     padding: 10px 20px;
     text-align: center;
-}
-
-.company-info {
-    text-align: right;
 }
 
 .logo {
     width: 100px;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
+/* Main content styles */
 .invoice-content {
-    background-color: #ffffff;
     padding: 20px;
-    margin-top: 15px;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #eaeaea; /* Light grey borders */
+}
+
+th {
+    background-color: #77a1d3; /* Softer blue for header cells */
+    color: #fff; /* White text for contrast */
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Totals section styles */
+.totals {
+    margin-top: 20px;
+}
+
+.totals table {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #eaeaea;
+}
+
+.totals td {
+    padding: 5px 10px;
+}
+
+/* Footer styles */
 .invoice-footer {
     text-align: center;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #007bff;
-    color: #ffffff;
+    padding: 10px 20px;
+    background-color: #5a88ca; /* Soft blue footer */
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
