@@ -42,7 +42,7 @@ function display_invoice() {
     new_row.innerHTML = `
       <td width="43%">
         <img src="./images/${products[i].image}" style="width: 50px; height: 50px; float: left; margin-right: 10px;">
-        ${products[i].name}
+        ${products[i].name}<div class="popup">${products[i].description}</div></div></td>
       </td>
       <td align="center" width="11%">${quantities[i]}</td>
       <td width="13%">\$${products[i].price}</td>

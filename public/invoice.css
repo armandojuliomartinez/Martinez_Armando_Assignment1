@@ -3,14 +3,18 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9; /* Soft grey background */
-    color: #333; /* Dark grey text for readability */
+    background-color: #f9f9f9;
+    /* Soft grey background */
+    color: #333;
+    /* Dark grey text for readability */
 }
 
 /* Header styles */
 .invoice-header {
-    background-color: #5a88ca; /* Soft blue header */
-    color: #fff; /* White text for contrast */
+    background-color: #5a88ca;
+    /* Soft blue header */
+    color: #fff;
+    /* White text for contrast */
     padding: 10px 20px;
     text-align: center;
 }
@@ -33,13 +37,18 @@ table {
     margin: 20px 0;
 }
 
-table, th, td {
-    border: 1px solid #eaeaea; /* Light grey borders */
+table,
+th,
+td {
+    border: 1px solid #eaeaea;
+    /* Light grey borders */
 }
 
 th {
-    background-color: #77a1d3; /* Softer blue for header cells */
-    color: #fff; /* White text for contrast */
+    background-color: #77a1d3;
+    /* Softer blue for header cells */
+    color: #fff;
+    /* White text for contrast */
     padding: 10px;
 }
 
@@ -68,9 +77,32 @@ td {
 .invoice-footer {
     text-align: center;
     padding: 10px 20px;
-    background-color: #5a88ca; /* Soft blue footer */
+    background-color: #5a88ca;
+    /* Soft blue footer */
     color: #fff;
-    position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+td {
+    position: relative;
+}
+
+/* Initially hide the popup */
+.popup {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    left: 100%; /* Adjust based on exact desired position */
+    top: 0;
+    width: 200px; /* Adjust based on content */
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 5px #888888;
+}
+
+/* Display the popup on hover over the image */
+td img:hover + .popup {
+    display: block;
 }

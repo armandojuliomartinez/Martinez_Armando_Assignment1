@@ -9,12 +9,12 @@ if (params.has('errors')) {
   // get the quantities also to insert into the form to make it sticky
   quantities = JSON.parse(params.get('quantities'));
   // modify code here to put up an alert if you have an error in errors indicating no quantities were selected
-  if (quantities.every(qty => parseInt(qty) == 0)) {
+  /*if (quantities.every(qty => parseInt(qty) == 0)) {
     alert('Please select at least 1 quantity for an item before submitting.');
   } else {
     // Put up an alert box if there are errors
     alert('Please fix the errors in the form and resubmit');
-  }
+  }*/
 }
 
 window.onload = async function () {

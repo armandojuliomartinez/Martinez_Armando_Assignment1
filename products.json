@@ -3,72 +3,84 @@
     "name": "LEGO: AT-AT",
     "price": 849.99,
     "image": "LEGO_AT_AT.jpg",
-    "quantity_available": 3
+    "quantity_available": 3,
+    "description": "6785 Pieces"
   },
   {
     "name": "LEGO: Millennium Falcon",
     "price": 849.99,
     "image": "LEGO_Millenium_Falcon.jpg",
-    "quantity_available": 8
+    "quantity_available": 8,
+    "description":"6785 Pieces"
   },
   {
     "name": "LEGO: The Razor Crest",
     "price": 599.99,
     "image": "LEGO_Razor_Crest.jpg",
-    "quantity_available": 1
+    "quantity_available": 1,
+    "description":"6785 Pieces"
   },
   {
     "name": "LEGO: Venator-Class Republic Attack Cruisers",
     "price": 649.99,
     "image": "LEGO_Venator_Class_Republic_Attack_Cruiser.jpg",
-    "quantity_available": 12
+    "quantity_available": 12,
+    "description":"6785 Pieces"
   },
   {
     "name": "LEGO: Executor Super Star Destroyer",
     "price": 69.99,
     "image": "LEGO_Executor_Super_Star_Destroyer.jpg",
-    "quantity_available": 6
+    "quantity_available": 6,
+    "description":"6785 Pieces"
   },
   {
     "name": "LEGO: Invisible Hand",
     "price": 49.99,
     "image": "LEGO_Invisible_Hand.jpg",
-    "quantity_available": 42
+    "quantity_available": 42,
+    "description":"6785 Pieces"
   },
   {
     "name": "LEGO: Tantive IV",
     "price": 79.99,
     "image": "LEGO_Tantive_IV.jpg",
-    "quantity_available": 45
+    "quantity_available": 45,
+    "description":"6785 Pieces"
   },
   {
     "name": "LEGO: Tusken Raider",
     "price": 9.99,
     "image": "LEGO_tusken_raider.jpg",
-    "quantity_available": 13
+    "quantity_available": 13,
+    "description":"6785 Pieces"
   },
   {
     "name": "LEGO: 501st Clone Troopers™ Battle Pack",
     "price": 19.99,
     "image": "LEGO_501st_Clone_Troopers_Battle_Pack.jpg",
-    "quantity_available": 66
+    "quantity_available": 66,
+    "description":"6785 Pieces"
   },
   {
     "name": "LEGO: Rupublic Gunship",
     "price": 399.99,
     "image": "LEGO_Republic_Gunship.jpg",
-    "quantity_available": 4
+    "quantity_available": 4,
+    "description":"6785 Pieces"
   },
   {
     "name": "LEGO: BD-1",
     "price": 99.99,
     "image": "LEGO_BD_1.jpg",
-    "quantity_available": 7
+    "quantity_available": 7,
+    "description":"6785 Pieces"
   },
   {
     "name": "LEGO: The Child",
     "price": 89.99,
     "image": "LEGO_Grogu.jpg",
-    "quantity_available": 10
+    "quantity_available": 10,
+    "description":"6785 Pieces"
   }
 ]
